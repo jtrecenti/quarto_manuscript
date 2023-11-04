@@ -14,5 +14,11 @@ This is a simple placeholder for the manuscript's main document [@knuth84].
 
 
 ```{r}
-plot(1:10)
+library(ggplot2)
+
+# plot with mtcars
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point()
+
 ```
